@@ -2,7 +2,7 @@
     Matt Luca 
     Date: 5/15/2019 @ 8:06pm
     Subject: C Programming
-    Lab 12: Weather.c
+    Lab 12: weather.c
 */
 
 #include <stdio.h>
@@ -18,6 +18,7 @@
 char foo [50];
 float ftemp;
 char *start;
+
 
 /*
    URL has 3 parts, the protocol, host, and path.
@@ -67,16 +68,16 @@ int main (int argc, char **argv) {
 
    printf("\nStarting..\n");
    printf("Looking up IP address for %s\n", HOST);
-   printf("1");
+   //printf("1");
     
 
    struct hostent *he = gethostbyname(HOST);
 
-   printf("1");
+   //printf("1");
 
    struct in_addr *ip = (struct in_addr *) he->h_addr_list[0];
 
-   printf("2");
+   //printf("2");
    printf("IP address is: %s\n", inet_ntoa(*ip));
    printf("Creating structure...\n");
    
@@ -128,15 +129,15 @@ int main (int argc, char **argv) {
        printf("Recieving response...\n\n");
 
    char buf[1000];
+   
    char wind_dir[10]="";
-
    int location_set = 1 ;
    int observation_time_set = 1 ;
    int wind_set = 1 ;
 
    while ((fgets(buf, 1000, sock))!=NULL) {
 
-          
+          //if (debug)
                
                //printf("%s", buf);
 
