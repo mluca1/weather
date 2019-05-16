@@ -26,9 +26,21 @@ char *start;
    The HOST and the PATH below correspond to the URL.
 */
 
+/*
+
+ http://api.aerisapi.com/observations/ZIPCODE?client_id=CLIENT_ID&client_secret=CLIENT_SECRET
+ CLIENT_ID: kk1CU9UdOTJ050z63ZuDh
+ CLIENT_SECRET: 1y2kRweAUVgYoanjcWypsGBfbHPezYTOyQMDARXK
+ 
+*/
+
+#define CLIENT_ID = kk1CU9UdOTJ050z63ZuDh;
+#define CLIENT_SECRET = rUOW0GEyf5bT9JhUzro2WQAuUpj3A7nFHgVCRGEK;
+
 const int PORT = 80;
-const char HOST [] = "api.aerisapi.com"; //new
-const char PATH [] = "/api/kk1CU9UdOTJ050z63ZuDh/conditions/q/"; //new
+
+const char HOST [] = "api.aerisapi.com";
+const char PATH [] = "/api/kk1CU9UdOTJ050z63ZuDh/conditions/q/";
 
 
 /*
